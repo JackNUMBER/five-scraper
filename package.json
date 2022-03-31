@@ -1,0 +1,19 @@
+{
+  "name": "five-scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "get-slot": "node getSlots.js",
+    "get-slot:watch": "nodemon getSlots.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "date-fns": "^2.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
