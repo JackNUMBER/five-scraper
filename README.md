@@ -1,3 +1,5 @@
+<img align="right" src="assets/robot.png">
+
 The purpose of this project is to facilitate the booking of futsal "soccer five" game slots.\
 Currently only LE FIVE (https://lefive.fr) centers are available.
 
@@ -5,7 +7,7 @@ Currently only LE FIVE (https://lefive.fr) centers are available.
 
 Requirement: Node.js + npm
 
-1. Clone the repos.
+1. Clone the repo
 2. Run `npm i`
 3. Run `npm run get-slot`
 
