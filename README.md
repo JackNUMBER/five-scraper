@@ -1,6 +1,8 @@
 <img align="right" src="assets/robot.png">
 
-The purpose of this project is to facilitate the booking of futsal "soccer five" game slots.\
+The purpose of this project is to **facilitate the booking** of futsal "soccer five" game slots.\
+It will **list quickly all available slots** according to your playing habits.
+
 Currently only LE FIVE (https://lefive.fr) centers are available.
 
 ## Install and run
@@ -13,8 +15,7 @@ Requirement: Node.js + npm
 
 ## Custom
 
-The script works by time iteration, meaning it will gives you each slots available in the date and time range you have setted.\
-You can the number of weeks you want to check (starting today), wich day you want to play, at what time and where (centers).
+The script works by **time iteration**, meaning it will gives you each slots available in the date and time range you have setted. You can **set every part of the search**: the number of weeks you want to check, wich day you want to play, at what time and where.
 
 At the moment game duration is not customisable (set to 60 min) but you can set it in the request.
 
@@ -42,7 +43,7 @@ The script will check every 30 minutes slots between this two times.
 
 To add center you can take somes in the list bellow and add them in the `centers` const.
 
-> Eg. centers = [ LE_FIVE_VILETTE, LE_FIVE_PARIS_18 ]` will search in the 2 centers.
+> Eg. `centers = [ LE_FIVE_VILETTE, LE_FIVE_PARIS_18 ]` will search in the 2 centers.
 
 #### List of centers: (up-to-date on 31/03/2022)
 
@@ -96,3 +97,7 @@ const LE_FIVE_PERPIGNAN = 33;
 // Réunion
 const LE_FIVE_SAINT_LOUIS_LA_REUNION = 52;
 ```
+
+## Next steps
+
+I plan to add booking part with Puppeteer.
