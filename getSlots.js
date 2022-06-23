@@ -155,7 +155,10 @@ async function scrap() {
 
   Promise.all(slots).then(function (promises) {
     promises = promises.filter((x) => x.length > 0);
-    console.log(promises.map((item) => formatResponse(item)));
+    console.dir(
+      promises.map((item) => formatResponse(item)),
+      { maxArrayLength: null },
+    );
   });
 }
 
