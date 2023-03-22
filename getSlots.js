@@ -28,7 +28,7 @@ const WEEK_DAYS = [1, 2, 3]; // list of week days (eg. monday = 1)
 const TIME_START = '19:00';
 const TIME_END = '21:00';
 
-const DELAY_BETWEEN_REQUEST = 100;
+const DELAY_BETWEEN_REQUEST = 200;
 
 const slots = [];
 
