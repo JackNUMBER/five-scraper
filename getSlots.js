@@ -153,12 +153,19 @@ async function scrap() {
     return `${formatedDate} (${countSlots} slots, ${price}) @ ${centerName}`;
   }
 
+  console.log('\n\nLes requêtes ont été envoyées. Veuillez patienter...\n');
+
   Promise.all(slots).then(function (promises) {
-    promises = promises.filter((x) => x.length > 0);
+    const slots = promises.filter((x) => x && x.length > 0);
     console.dir(
-      promises.map((item) => formatResponse(item)),
+      slots.map((item) => formatResponse(item)),
       { maxArrayLength: null },
     );
+    if (promises.some((x) => x === undefined)) {
+      console.log(
+        "\nAttention : certaines requêtes n'ont pas abouties. Les résultats ci-dessus peuvent être partiels.\n",
+      );
+    }
   });
 }
 
