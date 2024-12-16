@@ -1,13 +1,13 @@
-const axios = require('axios').default;
-const {
+import axios from 'axios';
+import {
   add,
   format,
   getISODay,
   getISOWeek,
   isWithinInterval,
-  set: fnsSet,
-} = require('date-fns');
-const frenchLocale = require('date-fns/locale/fr');
+  set as fnsSet,
+} from 'date-fns';
+import frenchLocale from 'date-fns/locale/fr';
 
 const LE_FIVE_VILETTE = 39;
 const LE_FIVE_PARIS_18 = 69;

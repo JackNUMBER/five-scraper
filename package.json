@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "get-slot": "node getSlots.js",
     "get-slot:watch": "nodemon getSlots.js"
