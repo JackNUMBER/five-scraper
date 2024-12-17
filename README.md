@@ -41,11 +41,11 @@ The script will check every 30 minutes slots between this two times.
 
 ### Centers
 
-To add center you can take somes in the list bellow and add them in the `centers` const.
+To add centers you have to update `centerList` variable with your wanted list.
 
-> Eg. `centers = [ LE_FIVE_VILETTE, LE_FIVE_PARIS_18 ]` will search in the 2 centers.
+> Eg. `centerList = [ centers.LE_FIVE_VILETTE, centers.LE_FIVE_PARIS_18 ]` will search in the 2 centers.
 
-[➡ List of centers](centers.md)
+[➡ List of centers](centers.js)
 
 ## Output
 
@@ -64,6 +64,4 @@ Here an example of what the script will retourn to you in the terminal:
 
 During the process you will see all dates listing, it is for debug.
 
-## Next steps
-
-I plan to add booking part with Puppeteer.
+⚽

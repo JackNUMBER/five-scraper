@@ -9,24 +9,21 @@ import {
 } from 'date-fns';
 import frenchLocale from 'date-fns/locale/fr';
 
-const LE_FIVE_VILETTE = 39;
-const LE_FIVE_PARIS_18 = 69;
-const LE_FIVE_PARIS_17 = 63;
-const LE_FIVE_PARIS_13 = 51;
+import * as centers from './centers.js';
 
-const centers = [
-  LE_FIVE_VILETTE,
-  LE_FIVE_PARIS_18,
-  // LE_FIVE_PARIS_17,
-  // LE_FIVE_PARIS_13,
+const centerList = [
+  centers.LE_FIVE_VILETTE,
+  // centers.LE_FIVE_PARIS_18,
+  // centers.LE_FIVE_PARIS_17,
+  // centers.LE_FIVE_PARIS_13,
 ];
 
-const WEEKS_FROM_NOW = 4; // number of weeks next today we will search a slot
+const WEEKS_FROM_NOW = 1; // number of weeks next today we will search a slot
 
-const WEEK_DAYS = [1, 2, 3]; // list of week days (eg. monday = 1)
+const WEEK_DAYS = [1]; // list of week days (eg. monday = 1)
 
 const TIME_START = '19:00';
-const TIME_END = '21:00';
+const TIME_END = '20:00';
 
 const DELAY_BETWEEN_REQUEST = 200;
 
@@ -88,7 +85,7 @@ async function scrap() {
       ) {
         console.log(currentDate);
 
-        centers.forEach((center) => {
+        centerList.forEach((center) => {
           slots.push(getSlotData(currentDate, center));
         });
 
